@@ -1,0 +1,45 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background: rgb(206, 238, 174);
+  background: radial-gradient(circle, rgba(206, 238, 174, 1) 13%, rgba(148, 187, 233, 1) 93%);
+  margin: 0;
+  height: 100vh;
+}
+.container {
+  display: grid;
+  grid-template-columns: 40% 10% 30% 20%;
+  grid-template-rows: repeat(3, 1fr);
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.img-cat-butterfly-container {
+  grid-column: 1/3;
+  grid-row: 1/3;
+  width: 100%;
+  height: 100%;
+}
+.img-kitten-container {
+  grid-column: 2/4;
+  grid-row: 2/4;
+  width: 100%;
+  height: 100%;
+}
+.who-are-we {
+  grid-column:3/6;
+  grid-row: 1;
+  text-align: center;
+  font-size: 300%;
+}
+.who-are-p {
+  grid-column: 1;
+  grid-row: 3/4;
+  text-align: center;
+  font-size: 140%;
+}
